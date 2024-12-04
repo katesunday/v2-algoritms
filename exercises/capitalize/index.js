@@ -9,4 +9,4 @@
 
 function capitalize(str) {}
 
-module.exports = capitalize;
+module.exports = capitalize

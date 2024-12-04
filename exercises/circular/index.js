@@ -14,4 +14,4 @@
 
 function circular(list) {}
 
-module.exports = circular;
+module.exports = circular

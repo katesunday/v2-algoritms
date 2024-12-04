@@ -13,4 +13,4 @@
 
 function levelWidth(root) {}
 
-module.exports = levelWidth;
+module.exports = levelWidth

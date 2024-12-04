@@ -19,4 +19,4 @@
 
 function steps(n) {}
 
-module.exports = steps;
+module.exports = steps

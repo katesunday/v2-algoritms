@@ -7,4 +7,4 @@
 
 function maxChar(str) {}
 
-module.exports = maxChar;
+module.exports = maxChar

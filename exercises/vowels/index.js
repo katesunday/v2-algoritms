@@ -9,4 +9,4 @@
 
 function vowels(str) {}
 
-module.exports = vowels;
+module.exports = vowels

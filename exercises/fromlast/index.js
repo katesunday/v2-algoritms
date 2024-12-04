@@ -13,4 +13,4 @@
 
 function fromLast(list, n) {}
 
-module.exports = fromLast;
+module.exports = fromLast

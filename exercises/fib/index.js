@@ -10,4 +10,4 @@
 
 function fib(n) {}
 
-module.exports = fib;
+module.exports = fib

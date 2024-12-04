@@ -10,4 +10,4 @@
 
 function anagrams(stringA, stringB) {}
 
-module.exports = anagrams;
+module.exports = anagrams

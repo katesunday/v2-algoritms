@@ -6,16 +6,16 @@
 
 class Queue {
   constructor() {
-    this.data = [];
+    this.data = []
   }
 
   add(record) {
-    this.data.unshift(record);
+    this.data.unshift(record)
   }
 
   remove() {
-    return this.data.pop();
+    return this.data.pop()
   }
 }
 
-module.exports = Queue;
+module.exports = Queue

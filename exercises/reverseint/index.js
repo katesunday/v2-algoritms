@@ -10,4 +10,4 @@
 
 function reverseInt(n) {}
 
-module.exports = reverseInt;
+module.exports = reverseInt

@@ -14,4 +14,4 @@
 
 function midpoint(list) {}
 
-module.exports = midpoint;
+module.exports = midpoint

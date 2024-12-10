@@ -17,19 +17,33 @@
 //       '### '
 //       '####'
 
+// function steps(n) {
+//   for (let i = 1; i <= n; i++) {
+//     let step = ''
+//     for (let j = 1; j <= i; j++) {
+//       step += '#'
+//     }
+//     for (let k = n - i; k >= 1; k--) {
+//       step += ' '
+//     }
+//     console.log(step)
+//   }
+// }
+
 function steps(n) {
-  for (let i = 1; i <= n; i++) {
+  for (let row = 1; row <= n; row++) {
     let step = ''
-    for (let j = 1; j <= i; j++) {
-      step += '#'
-    }
-    for (let k = n - i; k >= 1; k--) {
-      step += ' '
+    for (let col = 1; col <= n; col++) {
+      if (col <= row) {
+        step += '#'
+      } else {
+        step += ' '
+      }
     }
     console.log(step)
   }
 }
 
-// console.log(steps(4))
+console.log(steps(4))
 
 module.exports = steps

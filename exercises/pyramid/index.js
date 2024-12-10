@@ -35,5 +35,5 @@ function pyramid(n) {
   }
 }
 
-console.log(pyramid(4))
+//console.log(pyramid(4))
 module.exports = pyramid

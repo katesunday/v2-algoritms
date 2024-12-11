@@ -8,17 +8,17 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-  let vowels = ['a', 'e', 'i', 'o', 'u']
-  let counter = 0
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let counter = 0;
 
   for (let el of str.toLowerCase()) {
     if (vowels.includes(el)) {
-      counter++
+      counter++;
     }
   }
 
-  return counter
+  return counter;
 }
 
-console.log(vowels('abcdefghijklmnopqrstuvwxyz'))
-module.exports = vowels
+console.log(vowels('abcdefghijklmnopqrstuvwxyz'));
+module.exports = vowels;

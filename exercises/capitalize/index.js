@@ -11,10 +11,10 @@ function capitalize(str) {
   return str
     .split(' ')
     .map((el) => {
-      return el[0].toUpperCase() + el.slice(1)
+      return el[0].toUpperCase() + el.slice(1);
     })
-    .join(' ')
+    .join(' ');
 }
 
-console.log(capitalize('hi there, how is it going?'))
-module.exports = capitalize
+console.log(capitalize('hi there, how is it going?'));
+module.exports = capitalize;

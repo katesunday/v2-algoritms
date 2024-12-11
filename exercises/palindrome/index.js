@@ -11,8 +11,8 @@ function palindrome(str) {
   //return str === str.split('').reverse().join('')
 
   return str.split('').every((el, i) => {
-    return el === str[str.length - 1 - i]
-  })
+    return el === str[str.length - 1 - i];
+  });
 }
 
-module.exports = palindrome
+module.exports = palindrome;

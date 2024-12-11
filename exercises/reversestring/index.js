@@ -18,7 +18,7 @@ function reverse(str) {
   // return reversed;
 
   //v3
-  return str.split('').reduce((a, b) => b + a)
+  return str.split('').reduce((a, b) => b + a);
 }
 
-module.exports = reverse
+module.exports = reverse;

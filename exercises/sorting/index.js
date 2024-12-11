@@ -9,4 +9,4 @@ function mergeSort(arr) {}
 
 function merge(left, right) {}
 
-module.exports = { bubbleSort, selectionSort, mergeSort, merge }
+module.exports = { bubbleSort, selectionSort, mergeSort, merge };

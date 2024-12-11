@@ -32,18 +32,18 @@
 
 function steps(n) {
   for (let row = 1; row <= n; row++) {
-    let step = ''
+    let step = '';
     for (let col = 1; col <= n; col++) {
       if (col <= row) {
-        step += '#'
+        step += '#';
       } else {
-        step += ' '
+        step += ' ';
       }
     }
-    console.log(step)
+    console.log(step);
   }
 }
 
-console.log(steps(4))
+console.log(steps(4));
 
-module.exports = steps
+module.exports = steps;

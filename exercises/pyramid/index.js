@@ -21,19 +21,19 @@
 
 function pyramid(n) {
   for (let row = 0; row < n; row++) {
-    let level = ''
-    let length = n * 2 - 1
-    let middle = Math.floor((n * 2 - 1) / 2)
+    let level = '';
+    let length = n * 2 - 1;
+    let middle = Math.floor((n * 2 - 1) / 2);
     for (let col = 0; col < length; col++) {
       if (middle - row <= col && middle + row >= col) {
-        level += '#'
+        level += '#';
       } else {
-        level += ' '
+        level += ' ';
       }
     }
-    console.log(level)
+    console.log(level);
   }
 }
 
 //console.log(pyramid(4))
-module.exports = pyramid
+module.exports = pyramid;

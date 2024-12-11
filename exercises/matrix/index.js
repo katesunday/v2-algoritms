@@ -52,5 +52,5 @@ function matrix(n) {
   return matrix;
 }
 
-console.log(matrix(4));
+console.log(matrix(5));
 module.exports = matrix;

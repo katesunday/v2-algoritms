@@ -63,19 +63,24 @@ class LinkedList {
     previous.next = null;
   }
   insertLast(data) {
-    if (!this.head) {
-      this.head = new Node(data);
-    }
-    if (!this.head.next) {
-      this.head.next = new Node(data);
-    }
-    let previous = this.head;
-    let node = this.head.next;
-    while (node.next) {
-      previous = node;
-      node = node.next;
-    }
-    previous.next = new Node(data);
+    // if (!this.head) {
+    //   this.head = new Node(data);
+    // }
+    // if (!this.head.next) {
+    //   this.head.next = new Node(data);
+    // }
+    // let previous = this.head;
+    // let node = this.head.next;
+    // while (node.next) {
+    //   previous = node;
+    //   node = node.next;
+    // }
+    // previous.next = new Node(data);
+
+    //---------
+
+    let last = this.getLast();
+    last ? (last.next = new Node(data)) : (this.head = new Node(data));
   }
 }
 

@@ -31,7 +31,10 @@ class LinkedList {
   }
   getLast() {
     let node = this.head;
-    while (node.next) {
+    while (node) {
+      if (!node.next) {
+        return node;
+      }
       node = node.next;
     }
     return node;
@@ -82,6 +85,32 @@ class LinkedList {
     let last = this.getLast();
     last ? (last.next = new Node(data)) : (this.head = new Node(data));
   }
-}
 
+  getAt(index) {
+    if (!this.head) {
+      return null;
+    }
+    debugger;
+    if (index > this.size()) {
+      return null;
+    }
+    let count = 0;
+    let node = this.head;
+    while (node) {
+      if (count === index) {
+        return node;
+      }
+      node = node.next;
+      count++;
+    }
+    return node;
+  }
+}
+const l = new LinkedList();
+console.log(l.getAt(10));
+l.insertLast(1);
+l.insertLast(2);
+l.insertLast(3);
+l.insertLast(4);
+console.log(l.getAt(0));
 module.exports = { Node, LinkedList };

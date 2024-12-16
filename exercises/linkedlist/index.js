@@ -104,18 +104,22 @@ class LinkedList {
     }
     return node;
   }
+
   removeAt(index) {
     let previous = this.getAt(index - 1);
     let afterRemoved = this.getAt(index + 1);
+
     if (previous) {
       previous.next = afterRemoved;
     } else {
       this.head = afterRemoved;
     }
   }
+
   insertAt(data, index) {
     let previous = this.getAt(index - 1);
     let afterInserted = this.getAt(index);
+
     if (index > this.size()) {
       return this.insertLast(data);
     }

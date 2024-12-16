@@ -90,7 +90,6 @@ class LinkedList {
     if (!this.head) {
       return null;
     }
-    debugger;
     if (index > this.size()) {
       return null;
     }
@@ -104,6 +103,15 @@ class LinkedList {
       count++;
     }
     return node;
+  }
+  removeAt(index) {
+    let previous = this.getAt(index - 1);
+    let afterRemoved = this.getAt(index + 1);
+    if (previous) {
+      previous.next = afterRemoved;
+    } else {
+      this.head = afterRemoved;
+    }
   }
 }
 const l = new LinkedList();

@@ -114,11 +114,5 @@ class LinkedList {
     }
   }
 }
-const l = new LinkedList();
-console.log(l.getAt(10));
-l.insertLast(1);
-l.insertLast(2);
-l.insertLast(3);
-l.insertLast(4);
-console.log(l.getAt(0));
+
 module.exports = { Node, LinkedList };

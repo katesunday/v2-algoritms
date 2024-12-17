@@ -13,11 +13,19 @@
 //   midpoint(l); // returns { data: 'b' }
 
 function midpoint(list) {
-  let size = list.size();
-  let middle = size / 2;
-  return Number.isInteger(middle)
-    ? list.getAt(middle - 1)
-    : list.getAt(Math.floor(middle));
+  // let size = list.size();
+  // let middle = size / 2;
+  // return Number.isInteger(middle)
+  //   ? list.getAt(middle - 1)
+  //   : list.getAt(Math.floor(middle));
+
+  let slow = list.head;
+  let fast = list.head;
+  while (fast.next && fast.next.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  return slow;
 }
 
 module.exports = midpoint;

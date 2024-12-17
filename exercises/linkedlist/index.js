@@ -129,6 +129,17 @@ class LinkedList {
       this.head = new Node(data, afterInserted);
     }
   }
+
+  forEach(fn) {
+    if (!this.head) {
+      return null;
+    }
+    let node = this.head;
+    while (node) {
+      fn(node);
+      node = node.next;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };

@@ -12,6 +12,12 @@
 //   l.insertLast('c')
 //   midpoint(l); // returns { data: 'b' }
 
-function midpoint(list) {}
+function midpoint(list) {
+  let size = list.size();
+  let middle = size / 2;
+  return Number.isInteger(middle)
+    ? list.getAt(middle - 1)
+    : list.getAt(Math.floor(middle));
+}
 
 module.exports = midpoint;

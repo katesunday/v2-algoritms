@@ -28,7 +28,29 @@ class Node {
       this.right = new Node(data);
     }
   }
-  contains(data) {}
+  contains(data) {
+    let result = null;
+    if (data === this.data) {
+      result = this;
+      return result;
+    }
+    if (data < this.data && this.left) {
+      return this.left.contains(data);
+    } else if (data > this.data && this.right) {
+      return this.right.contains(data);
+    }
+    return result;
+  }
 }
 
+const node = new Node(10);
+node.insert(5);
+node.insert(15);
+node.insert(20);
+node.insert(0);
+node.insert(-5);
+node.insert(3);
+
+const three = node.left.left.right;
+console.log(node.contains(3), three);
 module.exports = Node;

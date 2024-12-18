@@ -16,11 +16,13 @@ const Node = require('./node');
 function levelWidth(root) {
   let arr = [root, null];
   let counters = [0];
+
   while (arr.length > 1) {
     let node = arr.shift();
+
     if (node === null) {
-      counters.push(0);
       arr.push(null);
+      counters.push(0);
     } else {
       arr.push(...node.children);
       counters[counters.length - 1]++;
